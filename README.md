@@ -3,25 +3,27 @@ Hey IDE Vim Plugin
 
 Installation instructions
 -------------------------
-1. With Pathogen
+- With [Pathogen](https://github.com/tpope/vim-pathogen)
 
 `git clone https://github.com/hey-network/hey.vim.git ~/.vim/bundle`
 
-2. With Vundle
+- With [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-In your .vimrc, add `hey-network/hey.vim` to your Vundle Plugins
+In your .vimrc, add `hey-network/hey.vim` to your Vundle Plugins.
 
-3. With apt-vim
+Then launch vim and run `:PluginInstall` (or by command line `vim +PluginInstall +qall`)
+
+- With [apt-vim](https://github.com/egalpin/apt-vim)
 
 `apt-vim install -y https://github.com/hey-network/hey.vim.git`
 
 
 How to use
 ----------
-Select some code in visual mode.
+1. Select some code in visual mode.
 
-Type `:call AskHey(':YOUR_QUESTION')`.
+2. Type `:call AskHey(':YOUR_QUESTION')`.
 
-You'll receive a token as the result of a curl request.
+3. You'll receive a token as the result of a curl request.
 
-Go to https://ide.hey.network/p/:TOKEN.
+4. Go to https://ide.hey.network/p/:TOKEN.
