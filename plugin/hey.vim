@@ -17,6 +17,6 @@ endfunction
 
 function! g:AskHey(content)
     let snippetContent = s:get_visual_selection()
-    let curlResult = system('!curl -d "{\"content\": \"' . a:content . '\", \"snippet\": {\"content\": \"' . snippetContent . '\"}}" -H "Content-Type: application/json" -X POST "https://api2.get-hey.com/v1/ide"')
-	echom "Edit and Post your question at https://ide.hey.network/p/:YOUR_CODE " + curlResult
+    execute '!curl -d "{\"content\": \"' . a:content . '\", \"snippet\": {\"content\": \"' . snippetContent . '\"}}" -H "Content-Type: application/json" -X POST "https://api2.get-hey.com/v1/ide"'
+	echom "Edit and Post your question at https://ide.hey.network/p/:TOKEN"
 endfunction
